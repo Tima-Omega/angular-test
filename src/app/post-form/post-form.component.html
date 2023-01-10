@@ -1,0 +1,17 @@
+<div>
+  <form (ngSubmit)="create()">
+    <input
+      type="text"
+      placeholder="Название поста"
+      [(ngModel)]="title"
+      name="title"
+    />
+    <input
+      type="text"
+      placeholder="Описание поста"
+      [(ngModel)]="body"
+      name="body"
+    />
+    <button>Создать пост</button>
+  </form>
+</div>

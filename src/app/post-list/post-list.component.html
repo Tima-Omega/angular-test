@@ -1,0 +1,9 @@
+<div class="posts" *ngFor="let post of posts; index as i">
+  <div class="content">
+    <strong> {{ i + 1 }}. {{ post.title }} </strong>
+    <div class="body">{{ post.body }}</div>
+  </div>
+  <div class="btns">
+    <Button (click)="remove(post)">Удалить</Button>
+  </div>
+</div>
